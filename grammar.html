@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grammatikk</title>
+
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./menybar.css">
+  <link rel="stylesheet" href="./flipCards.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <script src="./script.js"></script>
+ </head>
+<body>
+  <div class="topnav" id="hovedNav">
+    <a href="./index.html"><strong>Home</strong></a>
+    <a href="./losMuertos.html"><strong>El día de los Muertos</strong></a>
+    <a href="./grammar.html" class="active"><strong>Grammatikk</strong></a>
+    <a href="javascript:void(0);" class="icon" onclick="faBars()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+
+  <div class="midt-ark">
+    <h1>Grammatikk</h1>
+    <br>
+    <div class="liste">
+      <table class="tabell">
+        <caption>Noen nyttige oversettelser</caption>
+        <tr>
+          <th>Spansk</th>
+          <th>Norsk</th>
+        </tr>
+        <tr>
+          <th>Después</th>
+          <th>Etter</th>
+        </tr>
+        <tr>
+          <th>Después de</th>
+          <th>Etter (å ha)</th>
+        </tr>
+        <tr>
+          <th>Después de que</th>
+          <th>Etter at</th>
+        </tr>
+        <tr>
+          <th colspan="2" style="background-color: rgba(247, 247, 44, 0.693);">Preposisjoner</th>
+        </tr>
+        <tr>
+          <th>En</th>
+          <th>I/på</th>
+        </tr>
+        <tr>
+          <th>A</th>
+          <th>Til</th>
+        </tr>
+        <tr>
+          <th>De</th>
+          <th>Fra/av</th>
+        </tr>
+        <tr>
+          <th>Con</th>
+          <th>med</th>
+        </tr>
+        <tr>
+          <th>Para</th>
+          <th>For/med den hensikt å/til</th>
+        </tr>
+        <tr>
+          <th>Por</th>
+          <th>Gjennom/på grunn av</th>
+        </tr>
+      </table>
+    </div>
+    <div class="videos">
+      <h4>Hva er forskjellen på imerfecto og indefinido?</h4>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/7ZSv3hfG01g" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <div class="flipdiv">
+      <h3>Beveg pc-musen over kortet for å snu det</h3>
+      <br>
+
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <h2 id="front">Trykk på "Neste" for å starte</h2>
+          </div>
+          <div class="flip-card-back">
+            <h2 id="back"></h2>
+          </div>
+        </div>
+      </div>
+      <button id="next"><span>Neste</span></button>
+      <button id="next" onclick="restartPage()"><span>Restart</span></button>
+      <br><br><br><br><br>
+    </div>
+  </div>
+</div>
+
+
+
+<script src="./flipCard.js"></script>
+
+
+</body>
+</html>
